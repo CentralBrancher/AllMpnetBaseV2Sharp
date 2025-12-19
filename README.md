@@ -1,6 +1,6 @@
 # AllMpnetBaseV2Sharp
 
-C# implementation of Sentence Transformers **all-mpnet-base-v2**.
+C# implementation of Sentence Transformer **all-mpnet-base-v2**.
 
 Built as a modern **.NET 8** class library using **ONNX Runtime** and
 **HuggingFace tokenizers** for correctness and parity with the original Python model.
