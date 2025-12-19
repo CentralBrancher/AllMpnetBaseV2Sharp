@@ -8,6 +8,7 @@
     <PackageId>AllMpnetBaseV2Sharp</PackageId>
     <Version>0.1.0</Version>
     <Authors>CentralBrancher</Authors>
+    <Company>CentralBrancher</Company>
     <Description>
       C# implementation of sentence-transformers/all-mpnet-base-v2
       using ONNX Runtime and HuggingFace tokenizers.
