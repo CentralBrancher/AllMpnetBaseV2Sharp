@@ -12,10 +12,9 @@ Built as a modern **.NET 8** class library using **ONNX Runtime** and
 [AllMpnetBaseV2Sharp](https://www.nuget.org/packages/AllMpnetBaseV2Sharp)
 
 ❌ **The NuGet package does not include the ONNX model or tokenizer.json.**
-You need to download them manually from Hugging Face (see tested models below).
 You will need to download them manually from [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) on Hugging Face.
 
-By default, the embedder looks for these files in the .\model folder:
+By default, the embedder looks for these files in the ./model folder:
 ```./model/model.onnx```
 ```./model/tokenizer.json```
 
