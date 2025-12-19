@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllMpnetBaseV2Sharp.Tests", "AllMpnetBaseV2Sharp.Tests\AllMpnetBaseV2Sharp.Tests.csproj", "{5C7BF7A1-7F01-40AF-BF2F-22815BE94ADE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C7BF7A1-7F01-40AF-BF2F-22815BE94ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7BF7A1-7F01-40AF-BF2F-22815BE94ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7BF7A1-7F01-40AF-BF2F-22815BE94ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7BF7A1-7F01-40AF-BF2F-22815BE94ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {007FD67B-89FF-4F33-B399-67002556A9BC}
+	EndGlobalSection
+EndGlobal

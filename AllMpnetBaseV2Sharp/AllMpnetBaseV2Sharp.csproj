@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AllMpnetBaseV2Sharp</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>CentralBrancher</Authors>
+    <Description>
+      C# implementation of sentence-transformers/all-mpnet-base-v2
+      using ONNX Runtime and HuggingFace tokenizers.
+    </Description>
+    <PackageProjectUrl>https://github.com/CentralBrancher/AllMpnetBaseV2Sharp</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/CentralBrancher/AllMpnetBaseV2Sharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>nlp;embeddings;sentence-transformers;mpnet;onnx</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.23.2" />
+    <PackageReference Include="Tokenizers.HuggingFace" Version="2.21.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\model\model.onnx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackagePath>model/</PackagePath>
+    </Content>
+
+    <Content Include="..\model\tokenizer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>true</Pack>
+      <PackagePath>model/</PackagePath>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+</Project>
