@@ -7,11 +7,11 @@ Built as a modern **.NET 8** class library using **ONNX Runtime** and
 
 ---
 
-## 📦 NuGet
+## NuGet
 
 [AllMpnetBaseV2Sharp](https://www.nuget.org/packages/AllMpnetBaseV2Sharp)
 
-❌ **The NuGet package does not include the ONNX model or tokenizer.json.**
+**The NuGet package does not include the ONNX model or tokenizer.json.**
 You will need to download them manually from [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2) on Hugging Face.
 
 By default, the embedder looks for these files in the ./model folder:
@@ -22,7 +22,7 @@ You can also specify custom file locations by setting the paths in MpnetOptions.
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 ### Single sentence
 
